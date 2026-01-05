@@ -1,8 +1,15 @@
 import type { Metadata } from 'next'
-import { Raleway, Nunito } from 'next/font/google'
+import {
+  Raleway,
+  Nunito,
+  Roboto,
+  Neuton,
+  Open_Sans,
+  Inter,
+} from 'next/font/google'
 import './globals.css'
 
-const geistSans = Nunito({
+const gFont = Inter({
   subsets: ['latin'],
 })
 
@@ -18,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.className} antialiased`}>{children}</body>
+      <body className={`${gFont.className} antialiased`}>{children}</body>
     </html>
   )
 }
