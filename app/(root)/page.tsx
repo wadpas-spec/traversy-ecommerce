@@ -1,4 +1,8 @@
-import { Button } from '@/components/ui/button'
+import { Button } from "@/components/ui/button";
+
+export const metadata = {
+  title: "Home",
+};
 
 const Homepage = () => {
   return (
@@ -9,7 +13,7 @@ const Homepage = () => {
       <div className="h3-bold">This is a bold heading</div>
       <Button className="mt-4">Click Me</Button>
     </div>
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;
