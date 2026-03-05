@@ -3,6 +3,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { APP_DESCRIPTION, APP_NAME, SERVER_URL } from "@/lib/constants"
 import { ThemeProvider } from "next-themes"
+import Footer from "@/components/footer"
 
 const gFont = Inter({
   subsets: ["latin"],
