@@ -1,4 +1,4 @@
-import { log } from "console"
+import ProductCard from "./product-card"
 
 const ProductList = ({
   data,
@@ -17,12 +17,10 @@ const ProductList = ({
       {limitedData.length > 0 ? (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {limitedData.map((product: any) => (
-            <div
+            <ProductCard
               key={product.slug}
-              className="rounded-lg border p-4">
-              <h3 className="font-bold">{product.name}</h3>
-              <p className="text-lg font-bold">${product.price.toFixed(2)}</p>
-            </div>
+              product={product}
+            />
           ))}
         </div>
       ) : (
