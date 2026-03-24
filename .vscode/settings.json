@@ -1,5 +1,6 @@
 {
   "prettier.singleAttributePerLine": true,
   "html.format.wrapAttributes": "force-expand-multiline",
-  "prettier.bracketSameLine": true
+  "prettier.bracketSameLine": true,
+  "prisma.pinToPrisma6": true
 }
