@@ -27,12 +27,12 @@ const ProductCard = ({ product }: { product: any }) => {
         <div className="mt-2 flex items-center justify-between">
           <p>{product.rating} Stars</p>
           {product.stock > 0 ? (
-            <p className="mt-2 text-lg font-bold">
+            <div className="mt-2 text-lg font-bold">
               <ProductPrice
                 value={Number(product.price)}
                 classname="text-orange-800"
               />
-            </p>
+            </div>
           ) : (
             <p className="text-red-600">Out of Stock</p>
           )}
